@@ -1,0 +1,16 @@
+{
+  "name": "matamba",
+  "description": "Matamba Gateway plugins for coding agents",
+  "owner": {
+    "name": "Matamba Intelligence",
+    "email": "partners@matambaintelligence.com"
+  },
+  "plugins": [
+    {
+      "name": "matamba-gateway",
+      "source": "./plugins/matamba-gateway",
+      "description": "Integrate with the Matamba Gateway API: accounts, funding and Nigerian equity orders, with a sandbox quickstart and the docs search server.",
+      "category": "development"
+    }
+  ]
+}

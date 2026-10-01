@@ -1,0 +1,6 @@
+interface:
+  display_name: "Matamba Gateway sandbox quickstart"
+  short_description: "Place a first order in the Matamba Gateway sandbox"
+
+policy:
+  allow_implicit_invocation: false

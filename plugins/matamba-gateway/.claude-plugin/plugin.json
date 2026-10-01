@@ -1,0 +1,23 @@
+{
+  "name": "matamba-gateway",
+  "displayName": "Matamba Gateway",
+  "version": "1.0.0",
+  "description": "Integrate with the Matamba Gateway API: open brokerage accounts for your customers, fund them, and trade Nigerian equities. The integration rules as a skill, a sandbox quickstart, and a search server for the current docs.",
+  "author": {
+    "name": "Matamba Intelligence",
+    "email": "partners@matambaintelligence.com",
+    "url": "https://docs.matambaintelligence.com"
+  },
+  "homepage": "https://docs.matambaintelligence.com",
+  "repository": "https://github.com/Matambahq/gateway-skills",
+  "license": "MIT",
+  "keywords": [
+    "matamba",
+    "brokerage",
+    "nigeria",
+    "ngx",
+    "equities",
+    "fintech",
+    "api"
+  ]
+}

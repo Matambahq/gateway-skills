@@ -1,0 +1,11 @@
+interface:
+  display_name: "Matamba Gateway"
+  short_description: "Integration rules for the Matamba Gateway brokerage API"
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "matamba-gateway-docs"
+      description: "Search the Matamba Gateway docs"
+      transport: "streamable_http"
+      url: "https://docs.matambaintelligence.com/mcp"

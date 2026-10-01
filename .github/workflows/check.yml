@@ -1,0 +1,30 @@
+# The repo's own checks on every change: the Agent Skills rules, the
+# manifests, and the leak guard. The guard's term list is private: it comes
+# from the LEAK_TERMS secret, never from this repository. Without it the
+# check cannot run and fails.
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # commit messages are checked too
+          persist-credentials: false
+      - name: Skill rules, manifests, leak guard
+        env:
+          LEAK_TERMS: ${{ secrets.LEAK_TERMS }}
+        run: |
+          umask 077
+          printf '%s\n' "$LEAK_TERMS" > "$RUNNER_TEMP/leak-terms"
+          python3 scripts/generate.py --repo-only --check --leak-terms "$RUNNER_TEMP/leak-terms"

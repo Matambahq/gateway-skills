@@ -1,0 +1,4 @@
+# Written by each `claude plugin eval` run.
+plugins/matamba-gateway/evals/results/
+.DS_Store
+__pycache__/

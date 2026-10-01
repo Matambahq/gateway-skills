@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "matamba-gateway-docs": {
+      "type": "http",
+      "url": "https://docs.matambaintelligence.com/mcp"
+    }
+  }
+}
